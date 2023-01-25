@@ -1,11 +1,8 @@
 import random
 import math
 
-# Function to be optimized
 def objective_function(x):
     return -x * math.sin(math.sqrt(abs(x)))
-
-# Simulated Annealing
 def simulated_annealing(objective_function, T_initial, T_min, alpha, max_iter):
     x = random.uniform(-10, 10) # Initialize solution
     T = T_initial
